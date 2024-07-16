@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+         .mydiv1{
+            height: 390px;
+            width: 390px;
+            background-color: aquamarine;
+         }
+         .mydiv{
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+         } 
+
+         .parent{
+            background-color: white;
+            height: 400px;
+            width: 400px;
+            outline: 0;
+         }
+
+         .child{
+            height: 400px;
+            width: 400px;
+            background-size: cover;
+            background-image: url("nta.jpg");
+            font-size: 60px;
+            font-weight: 900px;
+            font-family: sans-serif;
+            text-align: center;
+            color:aquamarine;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: last baseline;
+            align-content: last baseline;
+         }
+
+
+
+    </style>
+
+    <title>DOM</title>
+    
+</head>
+    
+    <!-- <div id="A">Nothing Is Possible</div>
+        <p id="B">Jam Jogendra</p>
+        <ol>
+            <li id="C">Hello</li>
+        </ol> -->
+    <!-- <script src="dom.js"></script> -->
+
+    <div class="parent" onclick="change()"><img src="nta.jpg" height="400px" class="img1" width="400px"></div>
+     <br><br>
+     <div class="child" onclick="fun()"><b>Hii I am Jogendra</b></div>
+
+    <!-- <button class="mydiv" onclick="color_change()"><div class="mydiv1"></div></button> -->
+
+    <script>
+        var c=0;
+        function change(){
+            c=c+1;
+            if (c==1){
+                document.getElementsByClassName("img1")[0].src=("nt.jpg");
+            }
+
+            else if (c==2){
+                document.getElementsByClassName("img1")[0].src=("ntr org.bmp");
+            }
+
+            else if (c==3){
+                var h=document.getElementsByClassName("img1")[0];
+                h.src=("ntr org.bmp");
+                h.style.borderRadius="50%";
+
+            }
+
+
+            else{
+                document.getElementsByClassName("img1")[0].src=("nta.jpg");
+            }
+            
+           
+
+           //Method 2
+
+            //var x=document.getElementsByClassName("img1")[0];
+            //x.src=("nt.jpg");
+
+        }
+
+        function fun(){
+              var r=document.getElementsByClassName("child")[0];
+              r.style.backgroungImage=url("nt.jpg");
+        }
+
+
+        //function color_change()
+        //{
+            var a=document.getElementsByClassName("mydiv")[0];
+            var b=document.getElementsByClassName("mydiv1")[0];
+            a.style.backgroundColor="purple";
+            a.style.borderRadius="50%";
+            b.style.backgroundColor="purple";
+            b.style.borderRadius="50%"; 
+        //} 
+    </script>
+
+
+</body>
+</html>

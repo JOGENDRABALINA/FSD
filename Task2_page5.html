@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+    .page5head{
+        height:100svh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .firstdiv{
+        height: 400px;
+        width:100%;
+        background-color: blue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .seconddiv{
+        height:680px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+
+    .maindiv{
+        height: 700px;
+        width: 1200px;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        flex-direction: column;
+    }
+
+    .box{
+        width:500px;
+        height: 150px;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin-left: 5%;
+        margin-top: 3%;
+        position: relative;
+    }
+
+    .firstimage{
+        margin-top: 3%;
+        height: 550px;
+        width: 550px;
+        border-radius: 20px;
+    }
+
+    .dogimg{
+        margin-left: 5%;
+        margin-top: 5%;
+        position: absolute;
+    }
+
+    b{
+        font-family: sans-serif;
+        font-weight: 900px;
+        font-size: 20px;
+        position: absolute;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
+    p{
+        font-family: sans-serif;
+        font-weight: 900px;
+        font-size: 18px;
+        position: absolute;
+        margin-left: 25%; 
+        margin-top: 13%;
+    }
+
+    .freeimg{
+        margin-top: 40px;
+        font-family: sans-serif;
+        font-weight: 900px;
+        font-size: 18px;
+        margin-left: -7%;
+    }
+
+    .freepik{
+        margin-top: 40%;
+        font-family: sans-serif;
+        font-weight: 900px;
+        font-size: 18px;
+        margin-left:30% ;
+    }
+    u{
+        color:blue;
+    }
+
+    .secmainimg{
+        position: absolute;
+        margin-top: 5px;
+        height: 400px;
+        width: 400px;
+    }
+
+    .secondbox{
+        background-color: rgb(250, 161, 176);
+        height: 270px;
+        width: 500px;
+        border-radius: 20px;
+        margin-top: 25.9%;
+        position: relative;
+    }
+
+    .get{
+        font-family:monospace;
+        font-weight: 900px;
+        font-size: 24px;
+        position: absolute;
+        margin-left: 20%; 
+        margin-top: 3%;
+    }
+
+    .bonus{
+        font-family: sans-serif;
+        font-weight: 900px;
+        font-size: 24px;
+        position: absolute;
+        margin-left: 29%; 
+        margin-top: 6%;
+    }
+
+    .sample{
+        font-family: sans-serif;
+        font-weight: 900px;
+        font-size: 16px;
+        position: absolute;
+        margin-left: 16%; 
+        margin-top: 10%;
+    }
+
+    .bar{
+        height: 30px;
+        width: 330px;
+        background-color: white;
+        border-radius: 30px;
+        position: absolute;
+        margin-left: 8%; 
+        margin-top: 25%;
+    }
+
+    .submit{
+        height: 30px;
+        width: 80px;
+        background-color: blue;
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 900px;
+        position: absolute;
+        margin-left: 76%;
+        margin-top: 25%;
+        border-radius: 30px;
+        text-align: center;
+        align-content: center;
+    }
+
+    
+    @media screen and ((min-width:250px) and (max-width:330px))
+    {
+        .maindiv{
+            display: flex;
+            flex-wrap: wrap;
+            width: 310px;
+        }
+
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            width:300px;
+            height:250px
+            margin-left: 0px;
+        }
+
+        .firstimage{
+            display: none;
+        }
+        
+        .dogimg{
+            margin-left: 1%;
+        }
+
+        .secmainimg{
+            margin-top: -20%;
+        }
+
+        .secondbox{
+            margin-top:92%;
+        }
+
+    }
+
+    @media screen and ((min-width:370px) and (max-width:475px))
+    {
+        .maindiv{
+            display: flex;
+            flex-wrap: wrap;
+            width: 330px;
+            margin-left: 0px;
+        }
+
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            width:280px;
+            height:280px
+            margin-left: 0px;
+        }
+
+        .firstimage{
+            display: none;
+        }
+        
+        .dogimg{
+            margin-left: 1%;
+        }
+
+        .secmainimg{
+            margin-top: -35%;
+            width: 300px;
+        }
+
+        .secondbox{
+            margin-top:95%;
+            width: 300px;
+            margin-left: 2px;
+        }
+        .freeimg{
+            margin-left: 20%;
+        }
+
+        .bar{
+            width: 180px;
+            margin-left: 10px;
+            margin-top: 49%;
+        }
+        
+        .submit{
+            margin-top: 49%;
+            margin-left: 65%;
+        }
+
+        .get{
+            margin-left: 3%;
+        }
+
+        .bonus{
+            margin-top: 15%;
+            margin-left: 3%;
+        }
+
+        .sample{
+            margin-top: 20%;
+            margin-left: 3%;
+        }
+
+        .freepik{
+            margin-top: 65%;
+        }
+
+    }
+
+    @media screen and ((min-width:425px) and (max-width:625px))
+    {
+        .maindiv{
+            display: flex;
+            flex-wrap: wrap;
+            width: 350px;
+        }
+
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+           width:310px;
+            height:150px
+            margin-left: 0px;
+        }
+
+        .firstimage{
+            display: none;
+        }
+        
+        .dogimg{
+            margin-left: 1%;
+        }
+
+        .secmainimg{
+            margin-top: -26%;
+        }
+
+        .secondbox{
+            margin-top:70%;
+        }
+    }
+
+    @media screen and ((min-width:624px) and (max-width:1000px)){
+
+        .maindiv{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1000px;
+        }
+
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            width:400px;
+            height:150px
+            margin-left: 0px;
+        }
+
+        .firstimage{
+            height: 500px;
+            width: 300px;
+        }
+
+        .dogimg{
+            margin-left: 1%;
+        }
+
+        .secmainimg{
+            margin-top: 2%;
+        }
+
+        .secondbox{
+            margin-top:55%;
+        }
+    }
+
+     @media screen and ((min-width:1000px) and (max-width:1375px)){
+        .maindiv{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1300px;
+        }
+
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            width:400px;
+            height:150px
+            margin-left: 0px;
+        }
+
+        .firstimage{
+            height: 500px;
+            width: 400px;
+        }
+
+        .dogimg{
+            margin-left: 1%;
+        }
+
+        .secmainimg{
+            margin-top: -6%;
+        }
+
+        .secondbox{
+            margin-top:34%;
+        }
+     }
+
+    </style>
+
+    <title>Page5</title>
+</head>
+<body>
+
+    <div class="page5head">
+
+        <div class="firstdiv">
+
+            <div class="maindiv">
+
+                <div class="box">
+
+                <img class="dogimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4CiAWJb-SGxHBL5SFuS4Gi3x26095IjT-xA&s" height="80px" width="80px">
+
+                    
+                <b>Dog Health</b>
+
+                <p>Sample text.Click to select the text box.Click<br>
+                again or double click to start editing the text.</p>
+
+                </div>
+
+                <div class="box">
+
+                <img class="dogimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4CiAWJb-SGxHBL5SFuS4Gi3x26095IjT-xA&s" height="80px" width="80px">
+
+                    
+                <b>Dog Health</b>
+
+                <p>Sample text.Click to select the text box.Click<br>
+                again or double click to start editing the text.</p>
+
+                </div>
+
+                <div class="box">
+
+                <img class="dogimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4CiAWJb-SGxHBL5SFuS4Gi3x26095IjT-xA&s" height="80px" width="80px">
+
+                    
+                <b>Dog Health</b>
+
+                <p>Sample text.Click to select the text box.Click<br>
+                again or double click to start editing the text.</p>
+
+                </div>
+
+                <img class="firstimage" src="https://c4.wallpaperflare.com/wallpaper/764/505/66/baby-groot-4k-hd-superheroes-wallpaper-preview.jpg" heightL="800px" width="400px">
+            
+
+                <div>
+
+                    <p class="freeimg" >Image from <u>freepik.</u></p>
+
+            </div>
+
+          
+
+        </div>
+
+        <div class="seconddiv">
+
+            <img class="secmainimg" src="https://media.istockphoto.com/id/1041100896/photo/choice-concept-portrait-of-young-man-choosing-between-2-different-options-holding-two-hands.jpg?s=612x612&w=0&k=20&c=tSliSRjEmNBA9208NnB0uveMp0XE7aQKs0iDVZIxhyA=">
+
+            <div class="secondbox">
+
+                <p class="get">Get our free newsletter</p><br>
+                <b class="bonus">+ bonus Content</b><br>
+
+                <p class="sample">Sample text.Click to select the text box.Click<br>
+                    again or double click to start editing the text.</p>
+
+                <div class="bar">
+
+                </div>
+
+                <div class="submit">
+                    Submit
+                </div>
+
+                <p class="freepik" >Image from <u>freepik.</u></p>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

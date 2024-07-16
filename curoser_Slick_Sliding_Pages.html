@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <style>
+
+        body{
+            margin-top: 9%;
+            background-color: cornsilk;
+        }
+
+        .parent{
+            display: flex;
+            justify-content: center;
+            height: 420px;
+            width: 100%;
+            border: 1px solid black;
+            box-shadow: 2px 2px 1px red;
+        }
+
+        img{
+            border-radius: 20px;
+            height: 300px;
+            width: 300px;
+        }
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="parent">
+        <img src="./T1.jpg" height="410px" width="300px">
+        <img src="./sir page (1).jpg" height="300px" width="300px">
+        <img src="./T2.jpg" height="410px" width="300px">
+        <img src="./T3.jpg" height="410px" width="300px">
+        <img src="./T4.jpg" height="410px" width="300px">
+        <img src="./w11.jpg" height="400px" width="300px">
+        <img src="./w12.jpg" height="400px" width="300px">
+        <img src="./w13.jpg" height="400px" width="300px">
+        <img src="./w14.jpg" height="400px" width="300px">
+        <img src="./w15.jpg" height="400px" width="300px">
+        <img src="./w7.jpg" height="400px" width="300px">
+        <img src="./w8.jpg" height="400px" width="300px">
+        <img src="./w9.jpg" height="400px" width="300px">
+        <img src="./w10.jpg" height="400px" width="300px">
+    </div>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.parent').slick({
+            //dots: true,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 2,
+            //adaptiveHeight: true,
+            //centerMode: true,
+            //focusOnSelect: true
+          });
+      </script>
+    
+</body>
+</html>

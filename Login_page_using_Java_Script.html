@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style type="text/css">
+
+	.parent{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 700px;
+		justify-content: center;
+	} 
+
+	.page{
+		
+		height: 300px;
+		width: 400px;
+		border: 10px ridge purple;
+		background-color: navajowhite;
+		border-top-left-radius: 40%;
+		border-bottom-right-radius: 40%;
+	}
+
+	label{
+		font-size: 25px;
+		font-weight: 900px;
+		font-family: sans-serif;
+		text-align: center;
+		
+	}
+
+	input{
+		height: 30px;
+		width: 180px;
+	}
+
+	.username{
+		margin-top: 27%;
+	}
+
+    .first{
+    	margin-left: 7%;
+    }
+    
+    .second{
+    	margin-left: 7%;
+    }
+
+    .child{
+    	height: 300px;
+    	width: 100%;
+    	display: flex;
+    	flex-wrap: wrap;
+    	margin-left: 38%;
+    }
+
+    .signup{
+    	height: 40px;
+    	width: 120px;
+    	border-radius: 20px;
+    	border: 4px ridge darkolivegreen;
+    	font-size: 25px;
+		font-weight: 900px;
+		font-family: sans-serif;
+		text-align: center;
+		align-items: center;
+		align-content: center;
+		background-color: orange;
+    }
+
+    .login{
+    	height: 40px;
+    	width: 120px;
+    	border-radius: 20px;
+    	border: 4px ridge red;
+    	font-size: 25px;
+		font-weight: 900px;
+		font-family: sans-serif;
+		text-align: center;
+		align-items: center;
+		align-content: center;
+		background-color: lightsalmon;
+		margin-left: 5%;
+    }
+
+
+
+	</style>
+
+	<title>Login Page</title>
+</head>
+<body>
+
+	<div class="parent">
+        
+        <div class="page">
+
+        	<label for="username" class="first"><b>User Name</b></label>&nbsp;&nbsp;&nbsp;&nbsp;
+        	<input type="text" name="username" class="username"><br><br>
+
+        	<label for="password" class="second"><b>Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        	<input type="password" name="password" class="passwd">
+
+        </div>
+
+        <div class="child">
+
+        <script type="text/javascript">
+
+        	function signup(){
+        		var name=prompt("Enter Your Name")
+        		var passwd=prompt("Enter the Password")
+        	}
+            
+            function log(){
+        		alert("Login Successfully");
+        		alert("Now you can start your Journey")
+            }
+		
+	    </script>
+
+        <div class="signup"><button onclick="signup()"><b>SignUp</b></button></div>
+        <div class="login"><button onclick="log()"><b>Login</b></button></div>
+
+        </div>
+
+	</div>
+
+
+</body>
+</html>

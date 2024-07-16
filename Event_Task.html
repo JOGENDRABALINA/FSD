@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    
+    <label>First Name</label>
+    <input type="text" onchange="firstname(event)"><br><br>
+
+    <label>Last Name</label>
+    <input type="text" onchange="lastname(event)" onclick="event"><br><br>
+
+    <label>Number</label>
+    <input type="number" onchange="number(event)" onclick="event"><br><br>
+
+    <label>College</label>
+
+    <select onchange="college(event)">
+        <option>AEC</option>
+        <option>ACET</option>
+        <option>ACOE</option>
+    </select>
+
+    <button onclick="submit()">Submit</button>
+
+   <script>
+
+    data={
+        firstname:"",
+        lastname:"",
+        number:"",
+        college:""
+    };
+
+    function firstname(event){
+        data.firstname=event.target.value
+    }
+
+    function lastname(event){
+        data.lastname=event.target.value
+    }
+
+    function number(event){
+        data.number=event.target.value
+    }
+
+    function college(event){
+        data.college=event.target.value
+    }
+
+    function submit(){
+        console.log(data);
+    }
+
+   </script>
+</body>
+</html>

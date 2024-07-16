@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+         .parent{
+            background-image: linear-gradient( 109.6deg,  rgba(112,246,255,0.33) 11.2%, rgba(221,108,241,0.26) 42%, rgba(229,106,253,0.71) 71.5%, rgba(123,183,253,1) 100.2% );
+            width: 0px;
+            height: 410px;
+            transition: all 1s;
+         }
+
+         .child{
+            display: none;
+            
+         }
+
+         .options{
+            font-size: 40px;
+            text-align: center;
+            padding:10px;
+            color: black;
+            margin-top: 1%;
+         }
+
+         .options:hover{
+            transform: scale(1.08);
+            text-shadow: 1px 1px 2px whitesmoke;
+         }
+
+         .back{
+            font-size: 40px;
+            text-align: center;
+            padding:10px;
+            color: red;
+            margin-top: 1%;
+         }
+
+         .back:hover{
+            transform: scale(1.08);
+            text-shadow: 1px 1px 2px black;
+         }
+
+
+         button{
+            height: 60px;
+            width: 100;
+            padding: 10px;
+            font-size: 32px;
+            font-weight: 900px ;
+            font-family: sans-serif;
+            background-color: beige;
+            box-shadow: 1px 1px 1px greenyellow;
+         }
+
+    </style>
+
+    <title>Options</title>
+</head>
+<body>
+
+
+    <button onclick="fun()">Display</button>
+
+    <div class="parent">
+
+    <div class="child">
+
+        <div class="options">Home</div>
+        <div class="options">Read</div>
+        <div class="options">Share</div>
+        <div class="options">Contact</div>
+        <div class="options">Team</div>
+        <div class="back" onclick="fun2()">Close</div>
+
+    </div>
+
+    </div>
+
+    <div class="parent2">
+
+    </div>
+
+    <script src="Dom_Options.js">
+    
+</body>
+</html>

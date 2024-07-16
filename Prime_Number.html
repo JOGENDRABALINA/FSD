@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prime Number</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var num=prompt("Enter Your the number");
+		var c=0;
+		for(var i=2;i<num;i++){
+			if(num%i==0){
+				c=c+1;
+			}
+		}
+		if (c==0){
+			alert("Prime Number");
+		}
+		else{
+			alert("Not Prime Number")
+		}
+	</script>
+
+</body>
+</html>

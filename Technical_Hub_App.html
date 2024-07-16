@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        .parent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            margin-top: -8.5px;
+        }
+
+        .child{
+            display: flex;
+            flex-wrap: wrap;
+            width: 425px;
+            height: 1130px;
+            background-color: white;
+            position: relative;
+            border:1px solid black;
+        }
+
+        .header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 100%;
+            background-color: #107901;
+            background-image: linear-gradient(45deg, #107901 0%, #5df058 100%);
+
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            font-weight: 900px;
+            font-family: sans-serif;
+        }
+        
+        .welcome{
+            position: absolute;
+            top: 7.5%;
+            left: 5%;;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 900px;
+            font-family: sans-serif;
+        }
+        
+        .owlpage{
+            border-radius: 18px;
+            position: absolute;
+            top: 10.2%;
+            left:2.8%;
+            width: 94%;
+        }
+
+        .categories{
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: 900px;
+            position: absolute;
+            top: 29%;
+            left:5%;
+            color: rgb(245, 165, 15);
+        }
+
+        .boxes1header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            top: 32.8%;
+        }
+
+        .box{
+            border: 4px solid;
+            height: 50px;
+            width: 50px;
+            border-top-color: green;
+            border-left-color: yellowgreen;
+            border-right-color: gold;
+            border-bottom-color:orange;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 2px 2px 1px lightgrey;
+        }
+
+        .boxtxt{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            height: fit-content;
+            width: 100%;
+            position: absolute;
+            font-family: sans-serif;
+            font-weight: 900px;
+            top:38.8%
+        }
+
+        .boxes2header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            top: 42%;
+        }
+
+        .box2{
+            border: 4px solid;
+            height: 50px;
+            width: 50px;
+            border-top-color: green;
+            border-left-color: yellowgreen;
+            border-right-color: gold;
+            border-bottom-color:orange;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-shadow: 2px 2px 1px lightgrey;
+        }
+
+        .boxtxt2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: fit-content;
+            width: 100%;
+            position: absolute;
+            font-family: sans-serif;
+            font-weight: 900px;
+            top:48%
+        }
+
+        .newphotos{
+            position: absolute;
+            left: 5%;
+            top:51%;
+            color: rgb(255, 208, 0);
+            font-size: 25px;
+            font-family: sans-serif;
+            font-weight: 900px;
+        }
+
+        .sirpage{
+            position: absolute;
+            left: 4%;
+            top: 54.5%;
+            border-radius: 18px;
+        }
+
+        .circleheader{
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            width: 100%;
+            height: 12px;
+            top: 74%;
+        }
+
+        .cir1{
+            height: 10px;
+            width: 10px;
+            border-radius: 20px;
+            background-color: green;
+        }
+
+        #circ1{
+            margin-left: 40%;
+        }
+        #circ2{
+            margin-left: 1%;
+        }
+        #circ3{
+            margin-left: 1%;
+        }
+        #circ4{
+            margin-left: 1%;
+        }
+        #circ5{
+            margin-left: 1%;
+        }
+        #circ6{
+            margin-left: 1%;
+        }
+
+
+        .latest{
+            position: absolute;
+            left: 5%;
+            top:76%;
+            color: rgb(255, 208, 0);
+            font-size: 25px;
+            font-family: sans-serif;
+            font-weight: 900px;
+        }
+        
+        .boxes3header{
+            width: 90%;
+            height: 250px;
+            position: absolute;
+            top: 79%;
+            margin-left: 5%;
+        }
+
+        .box3{
+            border: 4px solid;
+            height: 130px;
+            width: 140px;
+            border-top-color: green;
+            border-left-color: yellowgreen;
+            border-right-color: gold;
+            border-bottom-color:orange;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 2px 2px 1px lightgrey;  
+        }
+
+        .eightimg{
+            margin-left: 19%;
+            margin-top: 16%;
+        }
+
+        .eightimgs{
+            margin-left: 11%;
+            margin-top: 13%;
+        }
+         
+        .navheader{
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 90px;
+        }
+        .navbar{
+            height: 85px;
+            width: 26.8%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 900px;
+            position: fixed;
+            margin-top: 43.5%;
+            background-color: white;
+        }
+
+        .icon1{
+            margin-left: 13%;
+            margin-top: 2%;
+        }
+
+        .icon2{
+            margin-left: 27%;
+            margin-top: 2%;
+        }
+
+        .icon3{
+            margin-left: 27%;
+            margin-top: 2%;
+        }
+
+        .home{
+            position: absolute;
+            bottom: 13px;
+            left: 10.5%;
+        }
+
+        .events{
+            position: absolute;
+            bottom: 13px;
+            left: 44.3%;
+        }
+
+        .profile{
+            position: absolute;
+            bottom: 13px;
+            left: 78.4%;
+        }
+
+        .images{
+            margin-top: 5%;
+            margin-left: 19%;
+        }
+        .ai{
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 900px;
+            color: green;
+            margin-left: 7%;
+            margin-top: 3%;
+        }
+
+        .apex{
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 900px;
+            color: green;
+            margin-left: 28.5%;
+            margin-top: 3%;
+        }
+
+        .vlsi{
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 900px;
+            color: green;
+            margin-left: 33%;
+            margin-top: 3%;
+        }
+
+        .pega{
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 900px;
+            color: green;
+            margin-left: 30%;
+        }
+
+        .service{
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 900px;
+            color: green;
+            margin-left: 13%;
+            margin-top: 3%;
+        }
+
+        li button{
+            display: none;
+        }
+        .slick-dots{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            gap: 10px;
+
+        }
+        .slick-active{
+            color:red;
+        }
+        
+    
+        .slick-slide {
+            padding:5px;
+            margin-right:15px;
+            margin-left:15px;
+        }
+
+        .slick-list {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+        .slick-list .slick-slide {
+            font-size: 30px;
+            line-height: 1;
+            padding: 5px;
+            font-weight: 900;
+        }
+
+        .slick-arrow {
+            z-index: 1;
+            width: 118px;
+            height: 40px;
+        }
+        
+        .slick-arrow:before {
+            font-size: 30px;
+        }
+        .slick-next {
+            right: 0;
+        }
+        .slick-prev {
+            left: 0;
+        }
+        
+        .btn-wrap {
+            text-align: center;
+            width: 100%;
+        }
+        button {
+            background-color: #ddd;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            transition: all 0.5s;
+        }
+        button.slick-disabled {
+            opacity: 0.6;
+        }
+
+
+    </style>
+
+    <title>Technical Hub</title>
+
+</head>
+<body>
+
+    <div class="parent">
+
+        <div class="child">
+
+            <div class="header">
+
+                <b>Technical Hub</b>
+
+            </div>
+
+            <div class="welcome">Welcome, <b>JOGENDRA</b></div>
+
+            <img class="owlpage" src="./owl page (1).jpg" height="200px" width="330px"/>
+           
+            <div class="categories"><b>Categories</b></div>
+
+
+            <div class="boxes1header">
+                <div class="box">
+                    <img class="eightimg" src="./programs (1).jpg" height="32px" width="32px">
+                </div>
+
+                <div class="box">
+                    <img class="eightimg" src="./courses (1).jpg" height="30px" width="30px">
+                </div>
+
+                <div class="box">
+                    <img class="eightimg" src="./certifications (1).jpg" height="30px" width="30px">
+                </div>
+
+                <div class="box">
+                    <img class="eightimg" src="./internships__1_-removebg-preview.png" height="30px" width="30px">
+                </div>
+
+            </div>
+
+            <div class="boxtxt">
+                 <div class="btxt">Programs</div>
+                 <div class="btxt">Courses</div>
+                 <div class="btxt">Certification</div>
+                 <div class="btxt">Internships</div>
+            </div>
+
+            <div class="boxes2header">
+
+                <div class="box2">
+                    <img class="eightimgs" src="./placements (1).jpg" height="32px" width="32px">
+                </div>
+                    
+                <div class="box2">
+                    <img class="eightimgs" src="./team.png" height="37px" width="37px">
+                </div>
+
+                <div class="box2">
+                    <img class="eightimgs" src="./partners.png" height="35px" width="35px">
+                </div>
+
+                <div class="box2">
+                    <img class="eightimgs" src="./owlcoders.png" height="35px" width="35px">
+                </div>
+
+            </div>
+
+            <div class="boxtxt2">
+                 <div class="btxt2">Placements</div>
+                 <div class="btxt2">Team</div>
+                 <div class="btxt2">Partners</div>
+                 <div class="btxt2">Owlcoder</div>
+            </div>
+
+            <div class="newphotos"><b>New Photos</b></div>
+
+            <img onclick="change()" class="sirpage" src="./sir page (1).jpg" height="200px" width="92%">
+
+            <div onclick="change()" class="circleheader">
+                <div onclick="change()" class="cir1" id="circ1"></div>
+                <div onclick="change()" class="cir1" id="circ2"></div>
+                <div onclick="change()" class="cir1" id="circ3"></div>
+                <div onclick="change()" class="cir1" id="circ4"></div>
+                <div onclick="change()" class="cir1" id="circ5"></div>
+                <div onclick="change()" class="cir1" id="circ6"></div>
+            </div>
+
+            <div class="latest"><b>Latest Courses</b></div>
+
+
+
+
+            <div class="boxes3header">
+
+                <div class="box3">
+                  
+                    <img src="./AI (1).jpg" class="images" height="80px" width="80px">
+
+                    <div class="ai"><b>Generative AI</b></div>
+
+                </div>
+
+                <div class="box3">
+                   
+                    <img src="./ora (1).jpg" class="images" height="80px" width="80px">
+
+                    <div class="apex"><b>APEX</b></div>
+
+                </div>
+
+                <div class="box3">
+                    
+                    <img src="./Tchip (1).jpg" class="images" height="80px" width="80px">
+
+                    <div class="vlsi"><b>VLSI</b></div>
+
+                </div>
+
+                <div class="box3">
+                     
+                    <img src="./Thorse (1).jpg" class="images" height="80px" width="80px">
+
+                    <div class="pega"><b>PEGA</b></div>
+
+                </div>
+
+                <div class="box3">
+
+                    <img src="./T circle (1).jpg" class="images" height="80px" width="80px">
+
+                    <div class="service"><b>ServiceNow</b></div>
+
+                </div>
+
+            </div>
+  
+        </div>
+
+        <div class="navheader">
+
+            <div class="navbar">
+    
+                <img class="icon1" src="./home.png" height="30px" width="30px">
+
+               <img class="icon2" src="./events.png" height="30px" width="30px">
+
+                <img class="icon3" src="./profile.png" height="30px" width="30px">
+        
+                <div class="home"><b>Home</b></div>
+
+                <a href="Thub_Events.html" ><div class="events"><b>Events</b></div></a>
+
+                <a href="Thub_Profile.html"><div class="profile"><b>Profile</b></div></a>
+    
+            </div>
+    
+            </div>
+
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('.boxes3header').slick({
+            slidesToShow: 2,
+            autoplay:true,
+            autoplaySpeed:2000,
+            speed:300,
+            Infinite:true,
+            arrows:false,
+            scroll:true,
+          });
+        
+    </script>
+
+    <script src="Technical_Hub.js">
+    
+</body>
+</html>

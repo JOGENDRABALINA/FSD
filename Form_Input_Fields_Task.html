@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+         .parent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 2400px;
+            width: 100%; 
+            background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% );
+         }
+
+         .child{
+            background-image: linear-gradient( 69.7deg,  rgba(244,37,243,1) 1.4%, rgba(244,87,1,1) 36.2%, rgba(255,204,37,1) 72.2%, rgba(20,196,6,1) 113% );
+            height: 2390px;
+            width: 900px;
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+         }
+
+        
+
+         label{
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 900px;
+            margin-left: 3%;
+            top: 0px;
+         }
+
+        .inputs{
+            height: 20px;
+            width: 200px;
+            outline: 0;
+            border: 0px;
+         }
+
+         textarea{
+            height: 100px;
+            width: 390px;
+            outline: 0;
+         }
+
+         h1{
+            font-family: sans-serif;
+            font-weight: 900px;
+            font-size: 40px;
+         }
+
+         h2{
+            font-family: sans-serif;
+            font-weight: 900px;
+         }
+
+         table,tr,th,td{
+            border:2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 0px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900px;
+            font-family: sans-serif;
+         }
+
+         #box{
+            background-color: orange;
+            text-decoration: none;
+            border: 0px;
+            height: 30px;
+            outline: 0;
+            width: 150px;
+            text-align: center;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 900px;
+         }
+
+         .submit{
+            height: 50px;
+            width: 150px;
+            font-size: 24px;
+            font-family: sans-serif;
+            font-weight: 900px;
+            padding:5px;
+            text-align:center;
+            align-items: center;
+            align-content: center;
+            background-color: blue;
+         }
+
+         .clear{
+            height: 50px;
+            width: 150px;
+            font-size: 24px;
+            background-color: red;
+            font-family: sans-serif;
+            font-weight: 900px;
+            text-align:center;
+            align-items: center;
+            align-content: center;
+         }
+
+         .back{
+            height: 100px;
+            width: 450px;
+            border:2px solid black;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: center;
+            box-shadow: 1px 1px 1px purple;
+         }
+
+         .back:hover{
+            background-color: beige;
+         }
+
+         .line{
+            display: flex;
+            flex-wrap: wrap;
+            height: 2px;
+            width: 400px;
+            background-color: darksalmon;
+            position: absolute;
+            bottom:10%;
+            justify-content: center;
+            text-align: center;
+            
+         }
+
+
+         .space{
+            position: absolute;
+            top:5%;
+         }
+
+         .space1{
+            position: absolute;
+            bottom: 13%;
+            height: 30px;
+            width: 400px;
+            outline: 0;
+            border: 0px;
+            text-align: center;
+         }
+
+         input::placeholder{
+            font-size: 20px;
+            font-weight: 900px;
+            font-family: sans-serif;
+         }
+
+         .spacem{
+            position: absolute;
+            bottom: 20%;
+            left: 20%;
+         }
+
+         .spacema{
+            position: absolute;
+            left: 25%;
+            top: 60%;
+         }
+
+         .spacef{
+            position: absolute;
+            bottom: 20%;
+            left: 55%;
+         }
+
+         .spacefe{
+            position: absolute;
+            top: 60%;
+            left: 60%;
+         }
+
+         .area{
+            height: 200px;
+            width: 450px;
+            border:2px solid black;
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: center;
+            box-shadow: 1px 1px 1px red;
+         }
+
+         .are{
+            outline: 0;
+         }
+
+         table{
+            border-radius: 40px;
+            box-shadow: 2px 2p x1px purple;
+         }
+         
+         th{
+            background-color: green;
+         }
+
+         td{
+            background-color: orange;
+         }
+
+    </style>
+
+    <title>Form Input Fields</title>
+</head>
+<body>
+
+    <div class="parent">
+
+        <div class="child">
+   
+           <form>
+
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Circulum Vitae</u></h1>
+
+            <div class="back"><div class="line"></div><label for="fname" class="space" id="mar"><b>First Name</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" onchange="firstname(event)" class="space1" id="mar" placeholder="Enter your first name"></div><br><br>
+
+            <div class="back"><div class="line"></div><label for="lname" class="space"><b>Last Name</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" onchange="lastname(event)" class="space1" placeholder="Enter your Surname"></div><br><br>
+
+            <div class="back"><div class="line"></div><label for="date" class="space"><b>DOB</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" onchange="dob(event)" class="space1"></div><br><br>
+
+            <div class="back"><div class="line"></div><label for="age" class="space"><b>Age</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" onchange="age(event)" class="space1"></div><br><br>
+
+            <div class="back"><div class="line"></div><label for="faname" class="space"><b>Father Name</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" onchange="fathername(event)" class="space1"></div><br><br>
+
+            <div class="back"><div class="line"></div><label for="mname" class="space"><b>Mother Name</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" onchange="mothername(event)" class="space1"></div><br><br>
+            
+            <div class="area"><div class="line"></div><label for="address" class="space"><b>Address</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea class="are" onchange="address(event)"></textarea></div><br><br>
+
+            <div class="back"><div class="line"></div><label for="gender" class="space"><b>Gender</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="radio" class="spacem" name="male">
+            <label for="male" class="spacema">Male</label>
+             
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="radio" class="spacef" name="male">
+            <label for="male" class="spacefe">Female</label></div><br><br>
+
+            <div class="back"><div class="line"></div><label for="certification" class="space"><b>Certifications</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" class="space1"></div><br><br>
+
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Acedemic Details</b></h2>
+
+             <table>
+                <tr>
+                    <th>Institute Name</th>
+                    <th>Year Of Passing</th>
+                    <th>Percentage</th>
+                </tr>
+
+                <tr>
+                    <th>SSC</th>
+                    <td><input id="box" type="text" value="2016"></td>
+                    <td><input id="box" type="text" value="100%"></td>
+                </tr>
+
+                <tr>
+                    <th>Inter</th>
+                    <td><input id="box" type="text" value="2019"></td>
+                    <td><input id="box" type="text" value="95%"></td>
+                </tr>
+
+                <tr>
+                    <th>Btech</th>
+                    <td><input id="box" type="text" value="2026"></td>
+                    <td><input id="box" type="text" value="85%"></td>
+                </tr>
+
+             </table><br><br>
+
+             <div class="back"><div class="line"></div><label for="skills" class="space"><b>Skills</b></label>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" onchange="skills(event)" class="space1"></div><br><br>
+
+            <div class="back"><div class="line"></div><label for="hobbies" class="space"><b>Hobbies</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" onchange="hobbies(event)"class="space1"></div><br><br>
+
+            <div class="back"><div class="line"></div><label for="profile" class="space"><b>Profile Pic</b></label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" class="space1"></div><br><br><br><br><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit"  onclick="submitform(event)" class="submit">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" class="clear">
+
+           </form>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+         data={
+            firstname:"",
+            lastname:"",
+            dob:"",
+            age:"",
+            fathername:"",
+            mothername:"",
+            address:"",
+            skills:"",
+            hobbies:"",
+         }
+
+         function firstname(event){
+            data.firstname=event.target.value
+         }
+
+         function lastname(event){
+            data.lastname=event.target.value
+         }
+
+         function dob(event){
+            data.dob=event.target.value
+         }
+
+         function age(event){
+            data.age=event.target.value
+         }
+
+         function fathername(event){
+            data.fathername=event.target.value
+         }
+
+         function mothername(event){
+            data.mothername=event.target.value
+         }
+
+         function address(event){
+            data.address=event.target.value
+         }
+
+         function skills(event){
+            data.skills=event.target.value
+         }
+
+         function hobbies(event){
+            data.hobbies=event.target.value
+         }
+
+         function submitform(event){
+            event.preventDefault();
+            console.log(data);
+         }
+
+    </script>
+    
+</body>
+</html>

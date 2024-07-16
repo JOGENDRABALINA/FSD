@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: -1px;
+            height: 900px;
+            width: 99%;
+            background-color: black;
+           
+        }
+
+        .parent{
+            border:1px solid black;
+            height:1070px;
+            width:430px;
+            position: relative;
+            background-color: white;
+        }  
+
+        .header{
+            position: absolute;
+            height: 250px;
+            width: 100%;
+            background-color: #107901;
+            background-image: linear-gradient(45deg, #107901 0%, #5df058 100%);
+        }
+
+        .mainimg{
+            position:absolute;
+            top:12%;
+        }
+
+        .profilepic{
+            position: absolute;
+            top:40%;
+            left:7%;
+            border-radius: 50%;
+        }
+
+        .headertxt{
+            font-family: sans-serif;
+            font-weight: 900px;
+            font-size: 18px;
+            position:absolute;
+            left:40%;
+            top:44%;
+        }
+
+        .boxheader{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            height:700px;
+            width:100%;
+            margin-top: 65%;
+            justify-content: space-around;
+        }
+
+        .box{
+            height: 150px;
+            width: 190px;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 2px 3.5px 1px rgb(190, 189, 189);
+            position: relative;
+        }
+        
+        .im{
+            position: absolute;
+            margin-left:55%;
+            margin-top: 40%;
+        }
+
+        .images{
+            position: absolute;
+            margin-left:58%;
+            margin-top: 35%;
+        }
+
+        .staimg{
+            position: absolute;
+            margin-left:54%;
+            margin-top: 30%;
+        }
+
+        .ima{
+            position: absolute;
+            margin-left:53%;
+            margin-top: 29%;
+        }
+
+        .courses{
+            font-size: 27px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-top: 5%;
+            margin-left: 8%;
+        }
+
+        .zero2{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-top: 15%;
+            margin-left: 8%;
+        }
+
+        .enrolled{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-left: 8%;
+        }
+        
+        .p{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-top: 15%;
+            margin-left: 18%; 
+        }
+
+        .profiles{
+            font-size: 27px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-top: 5%;
+            margin-left: 8%;
+        }
+
+        .zero28{
+            font-size: 32px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-left: 8%;
+        }
+
+        .solved{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-left: 10%;
+        }
+
+        .eligible{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-left: 12%;
+        }
+
+        .active{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-top: 25%;
+            margin-left: 12%;
+        }
+
+        .g2{
+            font-size: 28px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-top: 15%;
+            margin-left: 8%; 
+        }
+
+        .hall{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-left: 13.3%;
+        }
+
+        .zero{
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900px;
+            color:rgb(1, 155, 17);
+            margin-top: 15%;
+            margin-left: 10%;
+        }
+
+        .navheader{
+           height: 85px;
+           width: 27%;
+           background-color: white;
+           position: fixed;
+           margin-top: 26%;
+           margin-left: -1px;
+           
+        }
+        .navbar1{
+           margin-top: 1%;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+        }
+
+        .navbar2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2%;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: 900px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .headerlogo{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .logo{
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+
+        .logout{
+            margin-left: -60%;
+            margin-top: 91.5%;
+        }
+        
+        .intxt{
+            margin-top: -0.0%;
+            font-size: 17px;
+        }
+
+    </style>
+
+    <title>Profile</title>
+</head>
+<body>
+    
+<div class="parent">
+     
+    <div class="header">
+        
+    <div class="headerlogo">
+        <img class="logo" src="./thublogo-removebg-preview.png" height="35px" width="35px">
+
+        <a href="Thub_Logout.html"><img class="logout" src="./locklogo.png" height="30px" width="30px"></a>
+
+    </div>
+
+        <img class="profilepic" src="./Jogendra.jpg" height="100px" width="100px">
+
+        <div class="headertxt">
+            <b>BALINA JOGENDRA</b><br>
+            <p class="intxt">22MH1A05F9<br>
+            22mh1a05f9@acoe.edu.in<br>
+            +91 8897794453</p>
+        </div>
+             
+    </div>
+
+
+    <div class="boxheader">
+
+        <a href="Thub_MyCourses.html"><div class="box">
+
+            <img class="im" src="./courses (1).jpg" height="50px" width="70px">
+
+            <div class="courses"><b>Courses</b></div>
+            <div class="zero2"><b>02</b></div>
+            <div class="enrolled">Enrolled</div>
+
+        </div></a>
+        
+        <div class="box">
+
+            <img class="images" src="./Attendence (1).jpg" height="60px" width="60px">
+
+            <div class="courses"><b>Attendence</b></div>
+            <div class="p"><b>P</b></div>
+            <div class="enrolled">PRESENT</div>
+
+        </div>
+
+        <div class="box">
+
+            <img class="images" src="./codingprofiles (1).jpg" height="60px" width="60px">
+
+            <div class="profiles"><b>Coding<br>Profiles</b></div>
+            <div class="zero28"><b>288</b></div>
+            <div class="solved">solved</div>
+
+        </div>
+
+        <a href="Thub_Myskills.html"><div class="box">
+
+            <img class="images" src="./certifications (1).jpg" height="60px" width="60px">
+            <div class="courses"><b>My Skills</b></div>
+            <div class="zero2"><b>04</b></div>
+
+        </div></a>
+
+        <div class="box">
+
+            <img class="ima" src="./jpath (1).jpg" height="70px" width="70px">
+
+            <div class="courses"><b>J path</b></div>
+            <div class="p"><b>0</b></div>
+            <div class="eligible">Eligible</div>
+
+        </div>
+
+        <div class="box">
+
+            <img class="staimg" src="./status (1).jpg" height="70px" width="70px">
+
+            <div class="courses"><b>Status</b></div>
+            <div class="active">Active</div>
+
+        </div>
+
+        <div class="box">
+
+            <img class="ima" src="./sitting (1).jpg" height="70px" width="70px">
+
+            <div class="courses"><b>My Desk</b></div>
+            <div class="g2"><b>L4G12</b></div>
+            <div class="hall">HALL 4-2</div>
+
+        </div>
+
+        <a href="Thub_Vcards.html"><div class="box">
+
+            <img class="ima" src="./vcard (1).jpg" height="70px" width="70px">
+
+            <div class="courses"><b>V cards</b></div>
+            <div class="zero"><b>0</b></div>
+            <div class="enrolled">Total</div>
+
+        </div></a>
+
+        <div class="navheader">
+
+            <div class="navbar1">
+    
+                <img class="icon1" src="./homenogreen.png" height="30px" width="30px">
+
+               <img class="icon2" src="./events.png" height="30px" width="30px">
+
+                <img class="icon3" src="./profilegreen.png" height="30px" width="30px">
+
+            </div>
+
+            <div class="navbar2">
+        
+                <a href="Technical_Hub_App.html"><b>Home</b></a>
+
+                <a href="Thub_Events.html"><b>Events</b></a>
+
+                <a href="Thub_Profile.html"><b>Profile</b></a>
+
+            </div>
+    
+            </div>
+    
+            </div>
+
+    </div>
+    
+</div>
+
+</body>
+</html>

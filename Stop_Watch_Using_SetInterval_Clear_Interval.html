@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+    .parent{
+        width: 100%;
+        height: 100svh;
+        background-color: antiquewhite;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 100px;
+        font-weight: 900px;
+        font-family: sans-serif;
+        margin-top: -6px;
+    }
+    
+    .time{
+        display: flex;
+        flex-wrap: wrap;
+        height: 140px;
+        width: 600px;
+        background-color: greenyellow;
+    }
+
+
+
+
+    </style>
+
+    <title>Stop Watch</title>
+</head>
+<body>
+
+<div class="parent">
+
+    <div class="time">
+
+    <div class="seconds"></div>&nbsp;:&nbsp;
+    <div class="minutes"></div>&nbsp;:&nbsp;
+    <div class="hours"></div>
+    
+    </div>
+
+    <div class="buttons">
+        <div class="pos">
+        <button class="start">START</button>
+        <button class="stop">STOP</button>
+        <button class="reset">RESET</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    function fun(){
+        var s=0;
+        var m=0;
+        var h=0;
+        document.getElementsByClassName("seconds")[0].innerHTML=setInterval(sec,1000);
+        document.getElementsByClassName("minutes")[0].innerHTML=setInterval(min,60000);
+        document.getElementsByClassName("hours")[0].innerHTML=setInterval(hou,3600000);
+    }
+
+    setInterval(fun,1000);
+
+    function sec(){
+        var z=document.getElementsByClassName("seconds")[0].innerHTML;
+        var h=h+1;
+        if (h==60){
+            h==0;
+        }
+    }
+
+    function min(){
+        var z=document.getElementsByClassName("seconds")[0].innerHTML;
+        var h=h+1;
+        if (h==60){
+            h==0;
+        }
+    }
+
+    function hou(){
+        var z=document.getElementsByClassName("seconds")[0].innerHTML;
+        var h=h+1;
+        if (h==24){
+            h==0;
+        }
+    }
+
+</script>
+    
+</body>
+</html>
